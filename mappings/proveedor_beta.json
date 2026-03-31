@@ -1,0 +1,29 @@
+{
+  "proveedor": "Proveedor Beta",
+  "aliases": ["beta", "mayorista_beta", "dist_beta"],
+  "required_columns": ["codigo_prov", "detalle", "precio_neto"],
+  "column_map": {
+    "codigo_prov": "codigo_proveedor",
+    "part_number": "sku",
+    "detalle": "descripcion",
+    "fabricante": "marca",
+    "linea": "modelo",
+    "familia": "categoria",
+    "precio_neto": "costo_sin_iva",
+    "alicuota_iva": "iva_pct",
+    "precio_lista": "costo_con_iva",
+    "cantidad": "stock",
+    "stock_estado": "estado_stock",
+    "currency": "moneda",
+    "url_producto": "url",
+    "obs": "observaciones"
+  },
+  "defaults": {
+    "iva_pct": 10.5,
+    "moneda": "ARS"
+  },
+  "stock_rules": {
+    "in_stock_values": ["in stock", "available", "yes"],
+    "out_stock_values": ["out of stock", "no stock", "not available"]
+  }
+}

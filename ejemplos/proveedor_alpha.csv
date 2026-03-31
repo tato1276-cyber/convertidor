@@ -1,0 +1,2 @@
+codigo,sku,descripcion,brand,modelo,rubro,precio_sin_iva,iva,stock,estado,moneda,link,nota
+A1,SKU-A1,Notebook 14,MarcaX,M14,Notebooks,1000,21,5,disponible,USD,http://example.com/a1,ok
