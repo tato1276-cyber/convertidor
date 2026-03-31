@@ -1,0 +1,29 @@
+{
+  "proveedor": "Proveedor Alpha",
+  "aliases": ["alpha", "proveedor_alpha", "lista_alpha"],
+  "required_columns": ["codigo", "descripcion", "precio_final"],
+  "column_map": {
+    "codigo": "codigo_proveedor",
+    "sku": "sku",
+    "descripcion": "descripcion",
+    "brand": "marca",
+    "modelo": "modelo",
+    "rubro": "categoria",
+    "precio_sin_iva": "costo_sin_iva",
+    "precio_final": "costo_con_iva",
+    "iva": "iva_pct",
+    "stock": "stock",
+    "estado": "estado_stock",
+    "moneda": "moneda",
+    "link": "url",
+    "nota": "observaciones"
+  },
+  "defaults": {
+    "iva_pct": 21,
+    "moneda": "USD"
+  },
+  "stock_rules": {
+    "in_stock_values": ["disponible", "ok", "hay"],
+    "out_stock_values": ["sin stock", "agotado", "no"]
+  }
+}
